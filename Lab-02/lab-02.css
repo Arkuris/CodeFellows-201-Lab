@@ -1,0 +1,67 @@
+ h1{
+  background-color: blue;
+  text-align: center;
+  color: white;
+  padding: 25px;
+  font-family: Arial;
+  border-radius: 10px;
+ }
+
+ footer{
+  background-color: blue;
+  text-align: right;
+  color: white;
+  padding: 15px;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  flex-shrink: 0;
+ }
+
+.me-exp{
+  background-color: rgb(140, 0, 255);
+  color: white;
+  padding: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+}
+.abovebutton{
+  background-color: rgb(255, 0, 166);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+}
+button{
+  background-color: rgb(140, 0, 255);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  border-radius: 10px;
+  padding: 25px;
+  padding-left: 75px;
+  padding-right: 75px;
+  margin: 15px;
+
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+body{
+  background-color: rgb(52, 52, 52);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
