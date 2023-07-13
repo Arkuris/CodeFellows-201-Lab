@@ -99,10 +99,12 @@ body{
   background-color: rgb(52, 52, 52);
   display: flex;
   flex-direction: column;
+  cursor: url('inu.png'), auto;
 }
 
 main {
   flex-grow: 1;
+  cursor: url('inu.png'), auto;
 }
 .pre-career{
   font-size: 25px;
