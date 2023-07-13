@@ -77,7 +77,7 @@ button{
   padding-right: 35px;
   margin: 15px;
 }
-button:active{
+button:hover{
     border-color: white;
     background-color: blue;
     color: white;
