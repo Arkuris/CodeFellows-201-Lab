@@ -1,9 +1,16 @@
 'use strict';
+let userScore = (0)
+
 
 let name = prompt('What is you name?');
 if (name) {
   alert('Ayeee I like your name!!');
 } 
+
+function checkScore() {
+  alert('Your current score: ' + userScore);
+}
+
 
 function q1button() {
   let q1StringFromPrompt = prompt("Where do you think I was born?");
@@ -11,6 +18,7 @@ function q1button() {
   switch (q1StringFromPrompt.toLowerCase()) {
     case 'seattle':
       alert('Yup, you got it! :)');
+      userScore++;
       break;
     case '':
       alert('Please enter your guess.');
@@ -33,6 +41,7 @@ function q2button() {
   switch (q2StringFromPrompt.toLowerCase()) {
     case 'piano':
       alert('Yup! You got it, I play piano.');
+      userScore++;
       break;
     case '':
       alert('Please enter your guess.');
@@ -55,6 +64,7 @@ function q3button() {
   switch (q3StringFromPrompt.toLowerCase()) {
     case 'mac and cheese':
       alert('Thats right! I love me some good ole Mac and Cheese');
+      userScore++;
       break;
     case '':
       alert('Please enter your guess.');
@@ -80,6 +90,10 @@ function q4button() {
     case '':
       alert('Please enter your guess.');
       q4button();
+      break;
+    case '4':
+      alert('YEAH! I own 4:D');
+      userScore++;
       break;
     case '2':
       alert('nope, I own 4');
@@ -109,7 +123,52 @@ function q5button() {
     case 'basketball':
       alert('I played basketball as a kid, but I play Golf now! :D');
       break;
+    case 'golf':
+      alert('You got it! I play golf!');
+      userScore++;
+      break;
     default:
       alert('I play Golf! :D');
   }
+}
+function q6button() {
+  let answer = Math.floor(Math.random() * 100) + 1;
+  let attempts = 4;
+  console.log("User input: " + answer)
+  for (let i = 1; i <= attempts; i++) {
+    let guess = parseInt(prompt("Please guess a number between 1 and 100:"));
+
+    if (guess === answer) {
+      alert("Congratulations! You guessed the correct number!");
+      userScore++;
+      return;
+    } else if (guess < answer) {
+      alert("Guess is too low, try again!");
+    } else {
+      alert("Guess is too high! Try again.");
+    }
+  }
+
+  alert("You have exhausted all your attempts. The correct answer was: " + answer);
+}
+
+function q7button() {
+  let q7a = ["england", "scotland", "wales", "northern ireland", "ireland"];
+  let attempts = 6;
+
+  for (let i = 1; i <= attempts; i++) {
+    let q7StringFromPrompt = prompt("Which countries are part of the United Kingdom?");
+    console.log("User input: " + q7StringFromPrompt);
+    let q7r = q7StringFromPrompt.toLowerCase();
+
+    if (q7a.includes(q7r)) {
+      alert('That\'s correct!');
+      userScore++;
+      return;
+    } else {
+      alert('That is incorrect. Please try again.');
+    }
+  }
+
+  alert('Darn, you have reached your last attempt. The answers were, England, Scotland, Wales, and Northern Ireland, but just Ireland was acceptable.');
 }

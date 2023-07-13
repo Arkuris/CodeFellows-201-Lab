@@ -1,55 +1,94 @@
  h1{
-  background-color: blue;
+  background-color: rgb(4, 0, 87);
   text-align: center;
   color: white;
   padding: 25px;
-  font-family: Arial;
-  border-radius: 10px;
- }
-
- footer{
-  background-color: blue;
-  text-align: right;
-  color: white;
-  padding: 15px;
-  font-family: Arial;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 10px;
-  flex-shrink: 0;
- }
-
-.me-exp{
-  background-color: rgb(140, 0, 255);
-  color: white;
-  padding: 50px;
-  border-radius: 10px;
-  font-size: 20px;
   font-weight: bold;
   font-family: Arial;
-}
-.abovebutton{
-  background-color: rgb(255, 0, 166);
-  color: white;
+  border-radius: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+ }
+ h2{
+  background-color: rgb(4, 0, 87);
   text-align: center;
+  color: white;
   padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+ }
+ h3{
+  background-color: rgb(4, 0, 87);
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial;
+  border-radius: 10px;
+  margin: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+ }
+ h4{
+  background-color: rgb(4, 0, 87);
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial;
+  border-radius: 10px;
+  margin: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+ }
+
+.work-exp{
+  background-color: rgb(92, 71, 255);
+  color: white;
+  margin: 10px;
+  padding: 15px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: bold;
   font-family: Arial;
+  margin-right: 100px;
+  margin-left: 100px;
 }
+
 button{
-  background-color: rgb(140, 0, 255);
-  color: white;
+  border: 2px solid blue;
+  background-color: white;
+  color: blue;
   font-size: 20px;
   font-weight: bold;
   font-family: Arial;
   border-radius: 10px;
   padding: 25px;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 35px;
+  padding-right: 35px;
   margin: 15px;
-
+}
+button:active{
+    border-color: white;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    border-radius: 10px;
+    padding: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 15px;
 }
 .button-container {
   display: flex;
@@ -64,4 +103,68 @@ body{
 
 main {
   flex-grow: 1;
+}
+.pre-career{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Arial;
+  
+}
+.schoo-exp{
+  background-color: rgb(92, 71, 255);
+  color: white;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.schoo{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Arial;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.top10{
+  background-color: rgb(92, 71, 255);
+  color: white;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+footer{
+  background-color: rgb(4, 0, 87);
+  padding: 15px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  margin-top: 250px;
+  margin-right: 100px;
+  margin-left: 100px;
+ }
+ .footer-info{
+  color: white;
+  text-align: right;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+ }
+.footer-clicking{
+  display: flex;
+  gap: 10px;
+}
+.footer-container1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
