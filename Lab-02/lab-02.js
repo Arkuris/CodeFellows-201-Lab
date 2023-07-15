@@ -4,7 +4,7 @@ let userScore = (0)
 
 let name = prompt('What is you name?');
 if (name) {
-  alert('Ayeee I like your name!!');
+  alert('Welcome ' + name + '.');
 } 
 
 function checkScore() {
